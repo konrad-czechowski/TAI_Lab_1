@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unique KC site</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="#">Quiz</a>
+        </li>
+        <li class="nav-item">
+            <a href="#">Kontakt</a>
+        </li>
+    </ul>
+
+    <div class="form">
+    <form>
+        <fieldset class="border p-2">
+            <legend class="w-auto">Uzupełnij dane</legend>
+
+        <div class="form-group">
+        <label>
+          Imie:
+          <input id="name" class="form-control"/>
+        </label>
+        </div>
+  
+        <div class="form-group">
+        <label>
+          Nazwisko:
+          <input id="surname" class="form-control"/>
+        </label>
+        </div>
+  
+        <div class="form-group">
+        <label>
+          Email:
+          <input id="email" type="email" class="form-control"/>
+        </label>
+        </div>
+  
+        <div class="form-check">
+          Płeć:
+          <div class="form-check">
+            <label>
+            <input class="form-check-input" type="radio" id="male" name="gender" value="male">
+            Mężczyzna</label>
+            </div>
+  
+        <div class="form-check">
+            <label>
+              <input class="form-check-input" type="radio" id="female" name="gender" value="female">
+              Kobieta
+            </label>
+            </div>
+        </div>
+  
+        <div class="form-group">
+          <label>Opis</label>
+           <textarea class="form-control" id="textarea" rows="3"></textarea>
+        </div>
+  
+        <div class="form-group">
+         <label>
+           Wiek:
+          <input type="number" class="form-control" id="age" name="age" step="1" min="0" max="120">
+          </label>
+        </div>
+  
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Stan cywilny</label>
+            <select class="form-control" id="married">
+              <option>Panna/Kawaler</option>
+              <option>Mężatka/Żonaty</option>
+            </select>
+        </div>
+  
+        <button type="reset" class="btn btn-primary mb-2">Wyczyść</button>
+        <button type="submit" class="btn btn-primary mb-2">Wyślij</button>
+  
+        </fieldset>
+      </form>
+      </div>
+</body>
+</html>
