@@ -22,68 +22,60 @@
     <div class="form">
     <form>
         <fieldset class="border p-2">
-            <legend class="w-auto">Uzupełnij dane</legend>
+        <legend class="w-auto">Uzupełnij dane</legend>
 
         <div class="form-group">
-        <label>
-          Imie:
-          <input id="name" class="form-control"/>
-        </label>
+            <label for="name">Imie:</label>
+            <input id="name" name="name" class="form-control"/>
         </div>
-  
+
         <div class="form-group">
-        <label>
-          Nazwisko:
-          <input id="surname" class="form-control"/>
-        </label>
+            <label for="surname">Nazwisko:</label>
+            <input id="surname" name="surname" class="form-control"/>
         </div>
-  
+
         <div class="form-group">
-        <label>
-          Email:
-          <input id="email" type="email" class="form-control"/>
-        </label>
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" class="form-control"/>
         </div>
-  
-        <div class="form-check">
-          Płeć:
-          <div class="form-check">
-            <label>
-            <input class="form-check-input" type="radio" id="male" name="gender" value="male">
-            Mężczyzna</label>
-            </div>
-  
-        <div class="form-check">
-            <label>
-              <input class="form-check-input" type="radio" id="female" name="gender" value="female">
-              Kobieta
-            </label>
+
+        <div class="form-group" id="genders">
+            <label for="genders">Płeć:</label>
+            <div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="male" name="gender" value="male">
+                    <label class="form-check-label" for="male">Mężczyzna</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="female" name="gender" value="female">
+                    <label class="form-check-label" for="female">Kobieta</label>
+                </div>
             </div>
         </div>
-  
+
         <div class="form-group">
-          <label>Opis</label>
-           <textarea class="form-control" id="textarea" rows="3"></textarea>
+          <label for="textarea">Opis:</label>
+           <textarea class="form-control" id="textarea" rows="3" name="desc" placeholder="Krótki opis"></textarea>
+
         </div>
-  
+
         <div class="form-group">
-         <label>
-           Wiek:
+         <label for="age">Wiek:</label>
           <input type="number" class="form-control" id="age" name="age" step="1" min="0" max="120">
-          </label>
+
         </div>
-  
+
         <div class="form-group">
-            <label for="exampleFormControlSelect1">Stan cywilny</label>
-            <select class="form-control" id="married">
-              <option>Panna/Kawaler</option>
-              <option>Mężatka/Żonaty</option>
+            <label for="married">Stan cywilny:</label>
+            <select class="form-control" id="married" name="married">
+              <option value="no">Panna/Kawaler</option>
+              <option value="yes">Mężatka/Żonaty</option>
             </select>
         </div>
-  
+
         <button type="reset" class="btn btn-primary mb-2">Wyczyść</button>
         <button type="submit" class="btn btn-primary mb-2">Wyślij</button>
-  
+
         </fieldset>
       </form>
       </div>
