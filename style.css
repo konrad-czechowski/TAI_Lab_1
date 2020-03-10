@@ -19,3 +19,7 @@ form
     margin-right: auto;
     text-align: left;
 }
+
+li {
+    display: block;
+}
