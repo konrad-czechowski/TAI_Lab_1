@@ -30,3 +30,7 @@ li {
     text-align: center;
     background-color: cornsilk;
 }
+
+.navbar {
+    justify-content: center;
+}
