@@ -211,8 +211,11 @@ function activateAnswers() {
 }
 // activateAnswers();
 
-
 function setQuestion(index) {
+
+    if(previousAnswers.size===preQuestions.length){
+        quizEnd(points);
+    }
 
     if(previousAnswers.has(index)) {
         getPreviousAnswer(index)
@@ -241,19 +244,23 @@ function setQuestionNumber(index) {
 }
 
 next.addEventListener('click', function (event) {
-    index++;
-    if(index>=preQuestions.length) {
-        quizEnd(points);
+
+    if(index >= preQuestions.length-1) {
+
     } else {
+        index++;
+
         activateAnswers();
         setQuestion(index);
     }
+
 
 });
 
 previous.addEventListener('click', function (event) {
     if(index>0){
         index--;
+        activateAnswers();
         setQuestion(index);
     }
 });
