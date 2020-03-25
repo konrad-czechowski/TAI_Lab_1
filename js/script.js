@@ -34,7 +34,6 @@ function activateAnswers() {
         answers[i].classList.remove("correct", "incorrect");
     }
 }
-// activateAnswers();
 
 function setQuestion(index) {
 
@@ -62,24 +61,18 @@ function setQuestion(index) {
     setQuestionNumber(index);
 }
 
-// setQuestion(0);
-
 function setQuestionNumber(index) {
     questionNumber.innerHTML = index+1+"/"+preQuestions.length;
 }
 
 next.addEventListener('click', function (event) {
 
-    if(index >= preQuestions.length-1) {
-
-    } else {
+    if(index >= preQuestions.length-1) {return}
+    else {
         index++;
-
         activateAnswers();
         setQuestion(index);
     }
-
-
 });
 
 previous.addEventListener('click', function (event) {
