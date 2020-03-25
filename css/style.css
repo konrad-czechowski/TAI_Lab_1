@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: cornsilk;
 }
@@ -33,4 +37,11 @@ li {
 
 .navbar {
     justify-content: center;
+}
+
+.scroll {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
 }
